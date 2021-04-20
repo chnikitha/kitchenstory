@@ -1,0 +1,27 @@
+<div class="container">
+  
+</div>
+<div class="container">
+    <div class="row" id="searchbar">
+      <div class="search-hero">
+        <p class="lead" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bold;font-size: x-large;" >Start your purchase..</p>
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search Item">        
+      </div>
+      <br><br><br><br>
+      <div class="card mt-20" style="width: 18rem;" *ngFor = "let p of products1 | filter : searchText let i = index">
+        <img class="card-img-top" [src] = 'p.productImg' alt="the  image cap">
+        <div class="card-body">
+          <h5 id="pid">{{p.productId}}</h5>
+          <h5 class="card-title" id="pname">{{p.productName}}</h5>
+          <p class="card-text" id="pcat">{{p.productCat }}</p>
+          <p class="card-text" id="pprice">{{p.productPrice | currency:'INR'}}</p>
+          <a class="btn btn-primary" (click) = "getvalues(i)">Add to Cart</a>
+        </div>
+      </div>
+  
+
+    </div>
+  </div>
+    
+    
+  

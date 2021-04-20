@@ -1,0 +1,42 @@
+<div id="page">
+    <br><br><br>
+    
+    <p class="lead" style="font-weight: bold;font-size: 40px;font-family: cursive;">Admin Functions</p>
+    <p>
+
+        <a class="btn btn-success mr-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">To change Password</a>
+        <button class="btn btn-success mr-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">To View All Products</button>
+        <button class="btn btn-success mr-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">To Add Product</button>
+        
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body" style="text-align: center;font-weight: bold;font-size: 35px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;;color: rgb(63, 62, 62);">
+              To Change Password <br>
+                 <br>
+              <button type="submit" class="btn btn-outline-success" routerLink = "/admin/changepassword">Change Password</button>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body" style="text-align: center;font-weight: bold;font-size: 35px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;color: rgb(63, 62, 62);">
+                To View the <br>
+                store Items <br>
+                <button type="submit" class="btn btn-outline-success" routerLink = "/admin/products">View All Items</button> 
+              </div>
+            </div>
+          </div>
+          
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body"style="text-align: center;font-weight: bold;font-size: 35px;font-famil:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;color: rgb(63, 62, 62);" >
+              To Add <br>
+              the food items <br>
+              <button type="submit" class="btn btn-outline-success" routerLink = "/admin/products/new">Add Product </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
